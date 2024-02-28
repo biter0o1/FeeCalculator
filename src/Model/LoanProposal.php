@@ -10,29 +10,14 @@ namespace PragmaGoTech\Interview\Model;
  */
 class LoanProposal
 {
-    private int $term;
-
-    private float $amount;
-
-    public function __construct(int $term, float $amount)
+    public function __construct(public int $amount)
     {
-        $this->term = $term;
-        $this->amount = $amount;
-    }
-
-    /**
-     * Term (loan duration) for this loan application
-     * in number of months.
-     */
-    public function term(): int
-    {
-        return $this->term;
     }
 
     /**
      * Amount requested for this loan application.
      */
-    public function amount(): float
+    public function amount(): int
     {
         return $this->amount;
     }
