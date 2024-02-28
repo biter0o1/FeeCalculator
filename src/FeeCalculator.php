@@ -17,7 +17,9 @@ use PragmaGoTech\Interview\Model\LoanProposal;
 class FeeCalculator implements FeeCalculatorInterface
 {
     private const int MIN_AMOUNT_ALLOWED = 1000;
+
     private const int MAX_AMOUNT_ALLOWED = 20000;
+    
     public function __construct(public FeeStructureInterface $feeStructure, public InterpolationInterface $interpolation)
     {
     }
