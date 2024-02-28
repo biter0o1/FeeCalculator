@@ -71,3 +71,7 @@ The fee structure doesn't follow particular algorithm and it is possible that sa
 19000 PLN: 380 PLN
 20000 PLN: 400 PLN
 ```
+
+# Testing
+1. Run `composer install` to install the dependencies.
+2. Run `vendor/bin/phpunit tests` to run test using PHPUnit package.
