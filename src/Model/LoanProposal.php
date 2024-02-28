@@ -10,17 +10,14 @@ namespace PragmaGoTech\Interview\Model;
  */
 class LoanProposal
 {
-    private float $amount;
-
-    public function __construct(float $amount)
+    public function __construct(public int $amount)
     {
-        $this->amount = $amount;
     }
 
     /**
      * Amount requested for this loan application.
      */
-    public function amount(): float
+    public function amount(): int
     {
         return $this->amount;
     }
